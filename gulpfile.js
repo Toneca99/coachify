@@ -13,6 +13,7 @@ var path = {
 gulp.task('scss', function () {
 	
 	gulp.src( path.SCSS_SRC )
+		.pipe($.sourcemaps.init())
 		.pipe($.sass())
 		.pipe($.autoprefixer({ browsers: ['last 2 versions'], cascade: false }))
 		.pipe($.size({ showFiles: true }))

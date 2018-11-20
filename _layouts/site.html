@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,14 +8,52 @@
     <title>Coachify - Sport Academy</title>
     <link rel="stylesheet" href="{{ site.baseurl }}/css/style.css" type="text/css">
 </head>
+
 <body class="{% if page.title %}{{ page.title | slugify }}{% else %}home{% endif %}">
-    <nav>
-        <ul>
-            <li><a href="{{ site.baseurl }}/">index.html</a></li>
-            <li><a href="{{ site.baseurl }}/about/">About.html</a></li>
-        </ul>
-    </nav>
+
+    <div class="site">
+        <div class="banner"><img src="{{ site.baseurl }}/images/banner.jpg" class="banner-image">
+            <header class="site-header">
+                <div class="sticky">
+                    <a href="{{ site.baseurl }}/">
+                        <div class="site-branding">
+
+                            <div class="logo"><img src="{{ site.baseurl }}/images/oscar.png"></div>
+                            <div>
+                                <div class="site-title">Coachify</div>
+                                <div class="site-description">sport academy</div>
+                            </div>
+
+                        </div>
+                    </a>
+
+                    <nav class="navigation">
+                        <ul>
+                            <li><a href="{{ site.baseurl }}/about/">About</a></li>
+                            <li><a href="#">Academics</a></li>
+                            <li><a href="#">Events</a></li>
+                            <li><a href="#">Timetable</a></li>
+                            <li><a href="#">Gallery</a></li>
+                            <li><a href="#">Teachers</a></li>
+                            <li><a href="#"><i class="fas fa-search"></i></a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <section class="welcoming">
+                    <div class="trainer"><img src="{{ site.baseurl }}/images/trainer.png"></div>
+                    <div class="intro">
+                        <h2>Welcome to <span>coachify</span></h2>
+                        <p>{{ site.description}}</p>
+                    </div>
+                </section>
+        </div>
+
+
+        </header>
+    </div>
 
     {{ content }}
 </body>
+
 </html>

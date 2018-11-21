@@ -1,0 +1,62 @@
+/* background */
+.banner {
+    z-index: 1;
+    background-image: url("../images/banner.jpg");
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 12rem;
+
+    &:after {
+        display: block;
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(21, 73, 149, 0.8);
+    }
+}
+
+.welcoming {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 5rem;
+}
+
+.trainer {
+    margin: 0;
+
+    img {
+        display: block;
+        width: 33rem;
+    }
+}
+
+.intro {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    color: #FFF;
+    flex-direction: column;
+    width: 50rem;
+    z-index: 15;
+
+    h2 {
+        font-weight: 700;
+        font-size: 3rem;
+        padding-bottom: 1rem;
+        margin: 0;
+    }
+
+    span {
+        color: orange;
+    }
+
+    p {
+        width: 40rem;
+    }
+}

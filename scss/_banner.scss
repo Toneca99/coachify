@@ -6,8 +6,9 @@
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 12rem;
+  
 
-    &:after {
+    &:before {
         display: block;
         content: '';
         position: absolute;
@@ -16,6 +17,7 @@
         right: 0;
         bottom: 0;
         background: rgba(21, 73, 149, 0.8);
+        z-index:2;
     }
 }
 
@@ -25,10 +27,13 @@
     align-items: center;
     flex-wrap: wrap;
     padding-bottom: 5rem;
+    position: relative;
+    z-index: 999;
 }
 
 .trainer {
     margin: 0;
+  
 
     img {
         display: block;
@@ -44,6 +49,8 @@
     flex-direction: column;
     width: 50rem;
     z-index: 15;
+    position: relative;
+    
 
     h2 {
         font-weight: 700;
@@ -59,4 +66,5 @@
     p {
         width: 40rem;
     }
+
 }

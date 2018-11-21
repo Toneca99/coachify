@@ -1,8 +1,12 @@
 /* background */
 .banner {
     overflow: hidden;
-    position: relative;
     z-index: 1;
+    background-image:url('../images/banner.jpg');
+    position: relative;
+    background-repeat:no-repeat;
+    background-size:cover;
+    padding-top:50%;
 
     &:after {
         display: block;
@@ -13,6 +17,7 @@
         right: 0;
         bottom: 0;
         background: rgba(21, 73, 149, 0.8);
+        padding-top:25%;
     }
 
     .banner-img {
@@ -33,7 +38,7 @@
 
 .sticky {
     display: flex;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     align-items: center;
@@ -41,6 +46,7 @@
     width: 100%;
     z-index: 5;
     padding: 2rem 10rem;
+   
 }
 
 .site-branding {
@@ -76,15 +82,12 @@
 
 .welcoming {
     display: flex;
-    position: absolute;
-    z-index: 20;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+   
+    z-index: 2;
     justify-content: center;
     align-items: center;
-    margin: 0 2rem;
+    height:100%;
+  
 }
       
 .trainer {
@@ -93,29 +96,27 @@
   img {
       position: static;
       display: block;
-      bottom: 0;
       width: 33rem;
-      margin: 0;
   }
 
 }
 
   .intro {
       display: flex;
-      justify-content: center;
+      justify-content: flex-start;
       align-items: flex-start;
       color: #FFF;
-      flex-wrap:no-wrap;
       flex-direction: column;
-      flex-basis:40%;
+      width:50rem;
+      position:relative;
+      z-index:10;
     
       h2{
         font-weight: 700;
         font-size:3rem;
+        padding-bottom:1rem;
         margin:0;
-        padding:0;
-        flex:1 0 auto;
-        width:100%;
+     
       }
 
       span {
@@ -123,6 +124,6 @@
       }
 
       p{
-       
+        width:40rem;
       }
   }

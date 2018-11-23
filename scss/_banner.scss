@@ -79,6 +79,7 @@
 
     #nav-main-toggle:checked + .site-header + .banner {
         padding-top:30rem;
+        transition:padding 0.5s ease;
     }
 
 }

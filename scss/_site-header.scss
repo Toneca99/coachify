@@ -3,6 +3,16 @@
     width: 100%;
     z-index: 5;
     background:transparent;
+    transition:background 0.4s ease-in-out;
+
+   
+}
+
+@media screen and (max-width: 972px) {
+    #nav-main-toggle:checked + .site-header{
+        background: #273c75;
+    }
+
 }
 
 .sticky {

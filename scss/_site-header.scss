@@ -7,12 +7,27 @@
 
 .sticky {
     display: flex;
- 
+    width:100%;
     align-items: center;
     justify-content: space-between;
     padding: 2rem 10rem;
     flex-wrap:wrap;
-   
+     
+    @include mq( desktop , max) {
+        padding:2rem 1rem;
+    }
+
+    
+    @include mq (Screen2 , max) {
+    flex-direction: column;
+      padding:2rem 10rem;
+      align-items: flex-start;
+      
+    }
+
+    @include mq( phablet , max) {
+        padding:2rem 1rem;
+    }
 }
 
 .site-branding {

@@ -12,6 +12,7 @@
 <body class="{% if page.title %}{{ page.title | slugify }}{% else %}home{% endif %}">
 
     <div class="site">
+            <input type="checkbox" name="nav-main-toggle" id="nav-main-toggle">
             <header class="site-header">
                 <div class="sticky">
                     <a href="{{ site.baseurl }}/">
@@ -25,8 +26,9 @@
 
                         </div>
                     </a>
-
+                    <label id="nav-toggle-left" for="nav-main-toggle" class="fas nav-toggle left"><span>Menu</span></label>
                     <nav class="navigation">
+                           
                         <ul>
                             <li><a href="{{ site.baseurl }}/about/">About</a></li>
                             <li><a href="#">Academics</a></li>
@@ -43,9 +45,11 @@
 
 
         </header>
-    </div>
+  
 
     {{ content }}
+
+</div>
 </body>
 
 </html>

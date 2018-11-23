@@ -1,42 +1,131 @@
 .navigation {
-
+    display: none;
 
     ul {
-        display:flex;
-        margin:0;
-        padding:0;
-       
+        display: flex;
+        margin: 0;
+        padding: 0;
     }
 
     li {
-        list-style:none outside;
-        padding:1rem;
-        padding-bottom:0;
-        position:relative;
-        z-index: 5;
+        list-style: none outside;
+        padding: 1rem;
+        padding-bottom: 0;
+        position: relative;
+        z-index: 1000;
 
         &:before {
+            display: block;
             content: '';
-            background:transparent;
-            position:absolute;
-            top:0;left:0;
-            width:0;
-            height:120%;
-            border-bottom:2px solid orange;
-            transition:width 0.2s ease-in;
-            z-index:1;
-      
+            background: transparent;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 120%;
+            border-bottom: 2px solid orange;
+            transition: width 0.2s ease-in;
+            z-index: 1;
         }
+
         &:hover:before {
-        width:100%;
-        z-index:-1;
+            width: 100%;
+            z-index: -1;
         }
-        
-        a{
-            color:#fff;
-            font-weight:400;
+
+        a {
+            color: #fff;
+            font-weight: 400;
             text-transform: uppercase;
-         
         }
     }
+
+    @include mq(Screen2, max) {
+        ul {
+            display: block;
+        }
+    }
+}
+
+#nav-main-toggle {
+    display: none;
+}
+
+.nav-toggle {
+    position: absolute;
+    top: 3rem;
+    right: 20%;
+    z-index: 1000;
+    font-size: 2rem;
+    padding: 0 0.5rem;
+    
+
+    span {
+        display: none;
+
+        /* display: inline-block; */
+    }
+
+    &:before {
+        content: '\f0c9';
+        color: #FFF;
+        animation:navtogglein 0.3s ease-in-out forwards;
+    }
+}
+
+@media screen and (min-width: 973px) {
+    .nav-toggle {
+        display: none;
+    }
+
+    .navigation {
+        display: block;
+        align-self: center;
+    }
+}
+
+@media screen and (max-width: 972px) {
+    #nav-main-toggle:checked + .site-header {
+
+        .nav-toggle:before {
+            content: '\f00d';
+            animation: jump 0.1s 1 ease-in-out forwards;
+        }
+
+        .navigation {
+            position: absolute;
+            top: 8rem;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            text-align: center;
+            display: block;
+            transition: display 1s ease;
+
+            li {
+                background: #273c75;
+                padding-bottom: 1.2rem;
+                animation: navitemin 0.3s 1 ease-in forwards;
+                transform: scale(0.1) translate(0, 3rem);
+                opacity: 0;
+
+                &:before {
+                    display: none;
+                    border: none;
+                }
+            }
+
+            a {
+                color: #fff;
+
+            }
+
+            @for $i from 1 through 7 {
+                li:nth-child(#{$i}) {
+                    animation-delay: $i * 0.15s;
+                }
+            }
+        }
+    }
+
 }

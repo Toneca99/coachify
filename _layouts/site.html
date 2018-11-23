@@ -12,7 +12,7 @@
 <body class="{% if page.title %}{{ page.title | slugify }}{% else %}home{% endif %}">
 
     <div class="site">
-        <div class="banner"><img src="{{ site.baseurl }}/images/banner.jpg" class="banner-image">
+            <input type="checkbox" name="nav-main-toggle" id="nav-main-toggle">
             <header class="site-header">
                 <div class="sticky">
                     <a href="{{ site.baseurl }}/">
@@ -26,8 +26,9 @@
 
                         </div>
                     </a>
-
+                    <label id="nav-toggle-left" for="nav-main-toggle" class="fas nav-toggle left"><span>Menu</span></label>
                     <nav class="navigation">
+                           
                         <ul>
                             <li><a href="{{ site.baseurl }}/about/">About</a></li>
                             <li><a href="#">Academics</a></li>
@@ -40,20 +41,15 @@
                     </nav>
                 </div>
 
-                <section class="welcoming">
-                    <div class="trainer"><img src="{{ site.baseurl }}/images/trainer.png"></div>
-                    <div class="intro">
-                        <h2>Welcome to <span>coachify</span></h2>
-                        <p>{{ site.description}}</p>
-                    </div>
-                </section>
-        </div>
+              
 
 
         </header>
-    </div>
+  
 
     {{ content }}
+
+</div>
 </body>
 
 </html>

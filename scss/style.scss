@@ -1,8 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700|Open+Sans');
 @import '../fontawesome/css/all.css';
+
+@import 'responsive';
 @import 'reset';
 @import 'typography';
+@import 'animations';
+
+@import 'buttons';
 
 @import 'site-header';
 @import 'navigation';
+@import 'banner';
+@import 'elements'
+
+
+
 

@@ -1,7 +1,19 @@
-.button  {
-    border:1px solid #fff;
-    border-radius:0.5rem;
-    padding:1rem 1.5rem;
-    outline:none;
-    background:red;
+.button {
+    border: 1px solid #fff;
+    border-radius: 0.2rem;
+    padding: 1rem 2.5rem;
+    outline: none;
+    background: none;
+    color: #FFF;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition:background 0.2s ease-in, color 0.2s ease-in;
+
+    &:hover {
+        animation: pop 0.3s 1 ease-in forwards;
+        background: #FFF;
+        color: #337ab7;
+    }
 }
+
+

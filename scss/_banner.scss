@@ -1,0 +1,166 @@
+/* background */
+.banner {
+    z-index: 1;
+    background-image: url("../images/banner.jpg");
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 12rem;
+
+    &:before {
+        display: block;
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(21, 73, 149, 0.8);
+        z-index: 2;
+    }
+
+    // @include mq (Screen2 , max) {
+    //     padding-top:25rem;
+    //     }
+}
+
+.welcoming {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 5rem;
+    position: relative;
+    z-index: 999;
+
+    @include mq(tablet-wide, min) {
+        flex-wrap: nowrap;
+
+    }
+
+    @include mq(Screen3, min) {
+        flex-wrap: nowrap;
+    }
+
+
+}
+
+
+
+.trainer {
+    margin: 0;
+
+    img {
+        display: block;
+        width: 33rem;
+    }
+
+    
+    // @include mq(tablet-wide, max) {
+    //     img{
+    //         width:32rem;
+    //     }
+
+    // }
+    // @include mq(Screen3, min) {
+    //     img {
+    //         width: 30rem;
+    //     }
+    // }
+
+    @include mq(tablet, max) {
+        align-items: center;
+
+        img {
+            display: none;
+        }
+    }
+
+}
+
+.intro {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    color: #FFF;
+    flex-direction: column;
+    z-index: 15;
+    position: relative;
+
+    h2 {
+        font-weight: 700;
+        font-size: 3em;
+        padding-bottom: 1rem;
+        margin: 0;
+    }
+
+    span {
+        color: orange;
+    }
+
+    p {
+        width: 40em;
+    }
+
+    @include mq(tablet, max) {
+        align-items: center;
+        text-align: center;
+
+        h2 {
+            // padding: 5rem 0.3rem 1rem 0.2rem;
+            font-size: 2.5em;
+        }
+
+        p {
+            width: 30em;
+        }
+
+    }
+    @include mq(phone-wide, max) {
+    
+
+        p {
+            width: 25em;
+        }
+    }
+
+
+    
+}
+
+@media screen and (max-width: 972px) {
+    #nav-main-toggle:checked + .site-header + .banner {
+        padding-top: 30rem;
+        transition: padding 0.5s ease;
+    }
+
+    #nav-main-toggle:checked + .site-header + .banner + .welcoming + .trainer + .intro h2{
+        padding: 5rem .3rem 1rem .2rem;
+
+    }
+}
+
+// @media screen and (max-width:1023px) {
+
+//     .welcoming {display: block;}
+//     .intro {
+//        width:0rem;
+//         text-align: center;
+
+//         h2{
+//             padding-top:1rem;
+         
+//         }
+
+//         p{
+//             text-align: center;
+            
+//         }
+
+//         a{
+//             margin:auto;
+//         }
+//     }
+
+    
+// }

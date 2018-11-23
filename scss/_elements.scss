@@ -1,0 +1,92 @@
+
+.grandmaster {
+    background: rgb(250, 250, 250);
+}
+
+
+.featuring {
+    background:transparent;
+    top:-6rem;
+    position:relative;
+    z-index:900;
+    ul {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+
+        li {
+            list-style: none;
+            position:relative;
+        }
+
+        a {
+          display:block;
+        }
+
+        li:nth-child(1) a  {
+            background: url("../images/students.jpg");
+            background-size: cover;
+            padding:6rem 11rem;
+            
+        }
+        li:nth-child(2) a  {
+            background: url("../images/on-field.jpg");
+            background-size: cover;
+            padding:6rem 11rem;
+        
+        }
+
+        li:nth-child(3) a {
+            background: url("../images/coach.jpg");
+            background-size: cover;
+            padding:6rem 11rem;
+        }
+
+        h4 {
+            @extend %position;
+           
+            margin:0;
+            padding:6rem 1rem;
+            bottom:0;
+            text-transform: uppercase;
+            font-weight:700;
+            color:#FFF;
+        }
+
+        li:nth-child(1) h4{ background:rgba(255, 71, 87,0.8); transition:background 0.3s ease-in-out}
+            li:nth-child(1):hover h4{ background:rgba(255, 71, 87,0.6);}
+        li:nth-child(2) h4 { background:rgba(255, 127, 80,0.8); transition:background 0.3s ease-in-out }
+            li:nth-child(2):hover h4 {background:rgba(255, 127, 80,0.6);}
+        li:nth-child(3) h4{background:rgba(85, 230, 193,0.8); transition:background 0.3s ease-in-out}
+            li:nth-child(3):hover h4{background:rgba(85, 230, 193,0.6);}
+        
+        p{
+            @extend %position;
+            
+            margin-top:0.5rem;
+            padding:7rem 1rem 0 1rem;
+            bottom:0;
+            text-transform: uppercase;
+            font-weight:300;
+            color:#FFF;
+            font-size:1.5rem;
+        }
+
+    }
+}
+
+.grand {
+
+    p:first-child{ color:rgb(122, 122, 122);}
+    h3 {
+        font-weight:700;
+        margin:0;
+    }
+    display:flex;
+    padding:0 8rem 2rem 8rem;
+    .left-side,
+    .right-side {
+        flex-basis:50%;
+    }
+}

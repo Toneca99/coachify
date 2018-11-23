@@ -21,13 +21,14 @@
         }
 
         a {
-          display:block;
+          display:block;;
         }
 
         li:nth-child(1) a  {
             background: url("../images/students.jpg");
             background-size: cover;
             padding:6rem 11rem;
+            background-position: 20% 30%;
             
         }
         li:nth-child(2) a  {
@@ -41,6 +42,7 @@
             background: url("../images/coach.jpg");
             background-size: cover;
             padding:6rem 11rem;
+            background-position: 20% 15%;
         }
 
         h4 {
@@ -89,4 +91,25 @@
     .right-side {
         flex-basis:50%;
     }
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width:480px) {
+
+    #nav-main-toggle:checked + .site-header + .banner + .grandmaster {
+        .featuring {
+            top:-5.5rem;
+            transition:top 1.5s ease-in;
+        }
+    }
+
+    
+    .featuring {
+        top:0;
+        ul {
+            display:block;
+        }
+    }
+
 }

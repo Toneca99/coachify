@@ -9,7 +9,7 @@
 
     li {
         list-style: none outside;
-        padding: 1rem;
+        padding: 1rem 1.5rem;
         padding-bottom: 0;
         position: relative;
         overflow: hidden;
@@ -87,6 +87,21 @@
     }
 }
 
+
+/* RESPONSIVE */
+//     R   *RESPONSIVE*
+//     E   *RESPONSIVE*
+//     S   *RESPONSIVE*
+//     P   *RESPONSIVE*
+//     O   *RESPONSIVE*
+//     N   *RESPONSIVE*
+//     S   *RESPONSIVE*
+//     I   *RESPONSIVE*
+//     V   *RESPONSIVE*
+//     E   *RESPONSIVE*
+
+
+
 @media screen and (min-width: 973px) {
     .nav-toggle {
         display: none;
@@ -119,7 +134,7 @@
             li {
                 background: #273c75;
                 padding-bottom: 1.2rem;
-                animation: navitemin 0.3s 1 ease-in forwards;
+                animation: navitemin 0.3s 1 ease-in both;
                 transform: scale(0.1) translate(0, 3rem);
                 opacity: 0;
 

@@ -1,14 +1,13 @@
-
 .grandmaster {
     background: rgb(250, 250, 250);
 }
 
-
 .featuring {
-    background:transparent;
-    top:-6rem;
-    position:relative;
-    z-index:900;
+    background: transparent;
+    top: -6rem;
+    position: relative;
+    z-index: 900;
+
     ul {
         display: flex;
         margin: 0;
@@ -17,99 +16,297 @@
 
         li {
             list-style: none;
-            position:relative;
+            position: relative;
         }
 
         a {
-          display:block;;
+            display: block;
         }
 
-        li:nth-child(1) a  {
+        li:nth-child(1) a {
             background: url("../images/students.jpg");
             background-size: cover;
-            padding:6rem 11rem;
+            padding: 6rem 11rem;
             background-position: 20% 30%;
-            
         }
-        li:nth-child(2) a  {
+
+        li:nth-child(2) a {
             background: url("../images/on-field.jpg");
             background-size: cover;
-            padding:6rem 11rem;
-        
+            padding: 6rem 11rem;
         }
 
         li:nth-child(3) a {
             background: url("../images/coach.jpg");
             background-size: cover;
-            padding:6rem 11rem;
+            padding: 6rem 11rem;
             background-position: 20% 15%;
         }
 
         h4 {
             @extend %position;
-           
-            margin:0;
-            padding:6rem 1rem;
-            bottom:0;
+
+            margin: 0;
+            padding: 6rem 1rem;
+            bottom: 0;
             text-transform: uppercase;
-            font-weight:700;
-            color:#FFF;
+            font-weight: 700;
+            color: #FFF;
         }
 
-        li:nth-child(1) h4{ background:rgba(255, 71, 87,0.8); transition:background 0.3s ease-in-out}
-            li:nth-child(1):hover h4{ background:rgba(255, 71, 87,0.6);}
-        li:nth-child(2) h4 { background:rgba(255, 127, 80,0.8); transition:background 0.3s ease-in-out }
-            li:nth-child(2):hover h4 {background:rgba(255, 127, 80,0.6);}
-        li:nth-child(3) h4{background:rgba(85, 230, 193,0.8); transition:background 0.3s ease-in-out}
-            li:nth-child(3):hover h4{background:rgba(85, 230, 193,0.6);}
-        
-        p{
+        li:nth-child(1) h4 {
+            background: rgba(255, 71, 87, 0.8);
+            transition: background 0.3s ease-in-out;
+        }
+
+        li:nth-child(1):hover h4 {
+            background: rgba(255, 71, 87, 0.6);
+        }
+
+        li:nth-child(2) h4 {
+            background: rgba(255, 127, 80, 0.8);
+            transition: background 0.3s ease-in-out;
+        }
+
+        li:nth-child(2):hover h4 {
+            background: rgba(255, 127, 80, 0.6);
+        }
+
+        li:nth-child(3) h4 {
+            background: rgba(85, 230, 193, 0.8);
+            transition: background 0.3s ease-in-out;
+        }
+
+        li:nth-child(3):hover h4 {
+            background: rgba(85, 230, 193, 0.6);
+        }
+
+        p {
             @extend %position;
-            
-            margin-top:0.5rem;
-            padding:7rem 1rem 0 1rem;
-            bottom:0;
-            text-transform: uppercase;
-            font-weight:300;
-            color:#FFF;
-            font-size:1.5rem;
-        }
 
+            margin-top: 0.5rem;
+            padding: 7rem 1rem 0 1rem;
+            bottom: 0;
+            text-transform: uppercase;
+            font-weight: 300;
+            color: #FFF;
+            font-size: 1.5rem;
+        }
     }
 }
 
 .grand {
-
-    p:first-child{ color:rgb(122, 122, 122);}
-    h3 {
-        font-weight:700;
-        margin:0;
+    p:first-child {
+        color: rgb(122, 122, 122);
     }
-    display:flex;
-    padding:0 8rem 2rem 8rem;
+
+    h3 {
+        font-weight: 700;
+        margin: 0;
+    }
+
+    display: flex;
+    padding: 0 8rem 2rem 8rem;
+
     .left-side,
     .right-side {
-        flex-basis:50%;
+        flex-basis: 50%;
     }
 }
+
 
 /* RESPONSIVE */
+//     R   *RESPONSIVE*
+//     E   *RESPONSIVE*
+//     S   *RESPONSIVE*
+//     P   *RESPONSIVE*
+//     O   *RESPONSIVE*
+//     N   *RESPONSIVE*
+//     S   *RESPONSIVE*
+//     I   *RESPONSIVE*
+//     V   *RESPONSIVE*
+//     E   *RESPONSIVE*
 
-@media screen and (max-width:480px) {
 
+@media screen and (max-width:320px){
+    .featuring {
+        ul {
+            display: block;
+        }
+    }
+}
+
+@media screen and (min-width: 320px) {
     #nav-main-toggle:checked + .site-header + .banner + .grandmaster {
         .featuring {
-            top:-5.5rem;
-            transition:top 1.5s ease-in;
+            top: -5.5rem;
+            transition: top 1.5s ease-in;
         }
     }
 
-    
     .featuring {
-        top:0;
+        top: 0;
+
         ul {
-            display:block;
+            display: block;
+        }
+    }
+}
+
+
+
+@media screen and (min-width: 393px) {
+    #nav-main-toggle:checked + .site-header + .banner + .grandmaster {
+        .featuring {
+            top: -4rem;
+            transition: top 1.5s ease-in;
+        }
+    }
+}
+
+@media screen and (min-width: 480px) {
+    #nav-main-toggle:checked + .site-header + .banner + .grandmaster {
+        .featuring {
+            top: -2.5rem;
+            transition: top 1.5s ease-in;
         }
     }
 
+    .featuring {
+        top: 0;
+
+        ul {
+            display: block;
+
+            li:nth-child(1) a {
+                background-position: 20% 35%;
+            }
+
+            li:nth-child(2) a {
+                background-position: 20% 60%;
+            }
+
+            li:nth-child(3) a {
+                background-position: 20% 53%;
+            }
+        }
+    }
 }
+
+@media screen and (min-width: 767px) {
+    #nav-main-toggle:checked + .site-header + .banner + .grandmaster {
+        .featuring {
+            top: -5.5rem;
+            transition: top 1.5s ease-in;
+
+            ul {
+
+                display: flex;
+
+                li:nth-child(1) a {
+                    padding: 6rem 16.66vw;
+                    transition:padding 0.1s ease-in;
+                }
+
+                li:nth-child(2) a {
+                    padding: 6rem 16.66vw;
+                    transition:padding 0.1s ease-in;
+                }
+
+                li:nth-child(3) a {
+                    padding: 6rem 16.66vw;
+                    transition:padding 0.5s ease;
+                }
+            }
+        }
+    }
+        .featuring {
+            top: -6rem;
+
+            ul {
+                display: flex;
+
+                li:nth-child(1) a {
+                    padding: 6rem 8rem;
+                }
+
+                li:nth-child(2) a {
+                    padding: 6rem 8rem;
+                }
+
+                li:nth-child(3) a {
+                    padding: 6rem 8rem;
+                }
+
+                h4 {
+                    padding: 8rem 0.5rem 0 0.5rem;
+                }
+
+                p {
+                    padding: 9rem 0.5rem 0 0.5rem;
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width: 972px) {
+
+        .featuring {
+            top: -6.5rem;
+
+            ul {
+                display: flex;
+
+                li:nth-child(1) a {
+                    padding: 6rem 11rem;
+                }
+
+                li:nth-child(2) a {
+                    padding: 6rem 11rem;
+                }
+
+                li:nth-child(3) a {
+                    padding: 6rem 11rem;
+                }
+
+                h4 {
+                    padding: 6rem 1rem;
+                }
+
+                p {
+                    padding: 7rem 1rem 0 1rem;
+                }
+            }
+        }
+
+     }
+
+     @media screen and (min-width:1260px) { 
+        .featuring {
+            top: -6.5rem;
+
+            ul {
+                display: flex;
+
+                li:nth-child(1) a {
+                    padding: 7rem 13rem;
+                }
+
+                li:nth-child(2) a {
+                    padding: 7rem 13rem;
+                }
+
+                li:nth-child(3) a {
+                    padding: 7rem 13rem;
+                }
+
+                h4 {
+                    padding: 9rem 1rem 0 1rem;
+                }
+
+                p {
+                    padding: 10rem 1rem 0 1rem;
+                }
+            }
+        }
+     }

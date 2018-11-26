@@ -16,4 +16,38 @@
     }
 }
 
+.button-claim {
+    background:rgb(245, 171, 53);
+    border-bottom:3px solid rgba(110, 110, 110, 0.7);
+    border-radius:0.3rem;
+    padding: 1.2rem 3.5rem;
+    outline: none;
+    background: none;
+    color: #FFF;
+    font-weight: 400;
+    font-size:1.4rem;
 
+    &:hover {
+        animation: pop 0.3s 1 ease-in forwards;
+        color:#fff;
+     
+      
+    }
+}
+
+@media screen and (min-width:768px) {
+    .button-claim {
+        padding:1.2rem 1.5rem;
+    }
+}
+
+@media screen and (min-width:1080px) { 
+    .button-claim {
+        padding:1.2rem 2rem;
+    }
+}
+@media screen and (min-width:1300px) { 
+    .button-claim {
+        padding:1.2rem 3.5rem;
+    }
+}

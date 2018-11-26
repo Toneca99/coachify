@@ -137,6 +137,7 @@
                 animation: navitemin 0.3s 1 ease-in both;
                 transform: scale(0.1) translate(0, 3rem);
                 opacity: 0;
+                border:1px solid rgb(39, 60, 117);
 
                 &:before {
                     display: none;

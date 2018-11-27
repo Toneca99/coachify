@@ -106,11 +106,96 @@
     }
 }
 
+/* VIDEO  SECTION */
+
+.video {
+    display: flex;
+    padding: 2rem 10rem;
+
+    .left-side,
+    .right-side {
+        padding: 2rem;
+        flex-basis: 50%;
+        justify-content: center;
+    }
+
+    .left-side {
+        p {
+            padding-bottom: 2.5em;
+            color: gray;
+            flex-basis: 25%;
+        }
+
+        .right-side {
+            margin: 1 0 auto;
+        }
+    }
+}
+
 // RESPONSIVE 
 // RESPONSIVE 
 // RESPONSIVE 
 // RESPONSIVE 
 // RESPONSIVE
+
+
+/* VIDEO SECTION RESPONSIVE CODE */
+@media screen and (max-width: 1200px) {
+  .video {
+      flex-direction: column;
+      
+  }
+}
+
+@media screen and (max-width: 1000px) {
+    .video {
+        flex-wrap: wrap;
+        padding:2rem 10rem;
+
+        .left-side {
+            padding: 2rem;
+            flex-basis: 100%;
+            h3{
+                text-align: center;
+            }
+        }
+
+        .right-side {
+            flex-basis: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .video {
+        flex-wrap: wrap;
+        padding:2rem 5rem;
+
+        .left-side{
+            padding:2rem 0;
+        }
+
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .video {
+        flex-wrap: wrap;
+        padding:2rem 0rem;
+
+        .left-side{
+            padding:2rem 2rem;
+        }
+
+        .right-side{
+            padding:0;
+        }
+
+    }
+}
+
+/* VIDEO SECTION RESPONSIVE CODE */
+
 
 @media screen and (min-width: 767px) {
     .more .learn-more {
@@ -123,10 +208,10 @@
     .more {
         margin: 0 8rem;
     }
-        i {
-            padding: 0.5rem;
-        }
-    
+
+    i {
+        padding: 0.5rem;
+    }
 
     .claims {
         padding: 0.5rem 0rem 1rem 0;
@@ -139,7 +224,6 @@
 }
 
 @media screen and (min-width: 850px) {
-
     .claims {
         padding: 2.5rem 2.5rem 1rem 1rem;
 
@@ -151,22 +235,22 @@
             margin: 0 8rem;
         }
     }
+}
 
-    @media screen and (min-width: 1000px) {
-        .more .learn-more {
-            display: flex;
-            align-items: center;
-            flex-wrap: wrap;
-            justify-content: space-evenly;
-        }
-        .more {
-            margin: 0 10rem;
-        }
-        .claims {
-            padding: 2.5rem 2.5rem 1rem 1rem;
-            text-align: left;
+@media screen and (min-width: 1000px) {
+    .more .learn-more {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
 
-          
-        }
+    .more {
+        margin: 0 10rem;
+    }
+
+    .claims {
+        padding: 2.5rem 2.5rem 1rem 1rem;
+        text-align: left;
     }
 }

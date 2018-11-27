@@ -28,26 +28,9 @@
     font-size:1.4rem;
 
     &:hover {
-        animation: pop 0.3s 1 ease-in forwards;
+        animation:pop 0.3s 1 ease-in forwards;
         color:#fff;
      
       
     }
 }
-
-// @media screen and (min-width:768px) {
-//     .button-claim {
-//         padding:1.2rem 1.5rem;
-//     }
-// }
-
-// @media screen and (min-width:1080px) { 
-//     .button-claim {
-//         padding:1.2rem 2rem;
-//     }
-// }
-// @media screen and (min-width:1300px) { 
-//     .button-claim {
-//         padding:1.2rem 2.5rem;
-//     }
-// }

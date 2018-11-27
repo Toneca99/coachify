@@ -100,4 +100,8 @@
     .news .listing {
         width:55vw;
     }
+
+    .news .listing:nth-child(4) {
+        display:none;
+    }
 }

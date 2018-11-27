@@ -83,16 +83,35 @@ layout: site
 
     <h3>Our latest news</h3>
 
-    <ul class="listing posts">
-        {% for post in site.posts %}
-        <li>
-            <a href="{{ site.baseurl }}{{ post.url}}">
-                <span class="title">{{ post.title }}</span>
-                <span class="date">{{ post.date | date_to_string }}</span>
-            </a>
-        </li>
-        {% endfor %}
+    <div class="lists">
+    <ul class="listing">
+        <li class="published"><img src="images/oscar.png" alt=""><span class="admin">admin</span><span class="date">Nov27</span></li>
+        <li class="img"><img src="images/post/5simple.jpg" alt=""></li>
+        <li class="title"><a href="#">5 Simple & Easy Steps To Choose Future Career</a></li>
+        <li class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.</li>
+        <a href="#" class="read">Read More</a>
     </ul>
-    
+    <ul class="listing">
+            <li class="published"><img src="images/oscar.png" alt=""><span class="admin">admin</span><span class="date">Nov27</span></li>
+            <li class="img"><img src="images/post/5simple.jpg" alt=""></li>
+            <li class="title"><a href="#">5 Simple & Easy Steps To Choose Future Career</a></li>
+            <li class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.</li>
+            <a href="#" class="read">Read More</a>
+        </ul>
+        <ul class="listing">
+                <li class="published"><img src="images/oscar.png" alt=""><span class="admin">admin</span><span class="date">Nov27</span></li>
+                <li class="img"><img src="images/post/5simple.jpg" alt=""></li>
+                <li class="title"><a href="#">5 Simple & Easy Steps To Choose Future Career</a></li>
+                <li class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.</li>
+                <a href="#" class="read">Read More</a>
+            </ul>
+            <ul class="listing">
+                    <li class="published"><img src="images/oscar.png" alt=""><span class="admin">admin</span><span class="date">Nov27</span></li>
+                    <li class="img"><img src="images/post/5simple.jpg" alt=""></li>
+                    <li class="title"><a href="#">5 Simple & Easy Steps To Choose Future Career</a></li>
+                    <li class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.</li>
+                    <a href="#" class="read">Read More</a>
+                </ul>
+        </div>
 
 </section>

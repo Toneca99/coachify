@@ -1,8 +1,22 @@
+body.home {
+    .site-header {
+        position: absolute;
+        width: 100%;
+        z-index: 5;
+        background:transparent;
+        transition:background 0.4s ease-in-out;
+    
+       
+    }
+}
+
+
 .site-header {
     position: absolute;
     width: 100%;
+    top:0; left:0;
     z-index: 5;
-    background:transparent;
+    background:rgb(39, 95, 172);
     transition:background 0.4s ease-in-out;
 
    

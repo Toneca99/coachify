@@ -6,3 +6,18 @@
     --font-size-lv4:18px;
 
 }
+
+%position {
+    position:absolute;
+    top:0;left:0;right:0;bottom:0;
+}
+
+%pseudo {
+    display:block;
+    content:'';
+}
+
+%reset {
+    padding:0;
+    margin:0;
+}

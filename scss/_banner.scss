@@ -5,7 +5,8 @@
     position: relative;
     background-repeat: no-repeat;
     background-size: cover;
-    padding-top: 12rem;
+    padding-top: 14rem;
+    background-position:55%;
 
     &:before {
         display: block;
@@ -55,19 +56,7 @@
         width: 33rem;
     }
 
-    
-    // @include mq(tablet-wide, max) {
-    //     img{
-    //         width:32rem;
-    //     }
-
-    // }
-    // @include mq(Screen3, min) {
-    //     img {
-    //         width: 30rem;
-    //     }
-    // }
-
+ 
     @include mq(tablet, max) {
         align-items: center;
 
@@ -128,6 +117,19 @@
     
 }
 
+/* RESPONSIVE */
+//     R   *RESPONSIVE*
+//     E   *RESPONSIVE*
+//     S   *RESPONSIVE*
+//     P   *RESPONSIVE*
+//     O   *RESPONSIVE*
+//     N   *RESPONSIVE*
+//     S   *RESPONSIVE*
+//     I   *RESPONSIVE*
+//     V   *RESPONSIVE*
+//     E   *RESPONSIVE*
+
+
 @media screen and (max-width: 972px) {
     #nav-main-toggle:checked + .site-header + .banner {
         padding-top: 30rem;
@@ -140,27 +142,98 @@
     }
 }
 
-// @media screen and (max-width:1023px) {
+@media screen and (min-width:767px) {
 
-//     .welcoming {display: block;}
-//     .intro {
-//        width:0rem;
-//         text-align: center;
-
-//         h2{
-//             padding-top:1rem;
-         
-//         }
-
-//         p{
-//             text-align: center;
-            
-//         }
-
-//         a{
-//             margin:auto;
-//         }
-//     }
-
+    .welcoming{
+        flex-wrap:nowrap;
+    }
+    .trainer {
+        margin: 0;
     
-// }
+        img {
+            display: block;
+            width: 22rem;
+        }
+    }
+
+    .intro {
+
+        h2{
+            font-size:2.2em;
+            margin:0 auto;
+        }
+
+        p {
+            width:30rem;
+            text-align:center;
+        }
+
+        .button {
+            margin:0 auto;
+        }
+    }
+    
+}
+
+
+@media screen and (min-width:972px) {
+
+    .welcoming{
+        flex-wrap:wrap;
+    }
+    .trainer {
+        margin: 0;
+    
+        img {
+            display: block;
+            width: 30rem;
+        }
+    }
+
+    .intro {
+
+        h2{
+            font-size:2.5em;
+            
+        }
+
+        p {
+            width:30rem;
+            text-align: left;
+        }
+
+        .button {
+            margin:0;
+        }
+    }
+ }
+
+ @media screen and (min-width:1260px) { 
+
+    .trainer {
+        margin: 0;
+    
+        img {
+            display: block;
+            width: 40rem;
+        }
+    }
+
+    .intro {
+
+        h2{
+            font-size:3em;
+            
+        }
+
+        p {
+            width:40rem;
+            text-align: left;
+        }
+
+        .button {
+            margin:0;
+        }
+    }
+
+ }

@@ -33,17 +33,66 @@ layout: site
             <img src="{{ site.baseurl }}/images/signature.png">
             <p class="name">Anton Lafchiev</p>
             <p class="title">Coachify Grandmaster</p></div>
-        <div class="right-side"></div>
+        <div class="right-side">
+            <img src="{{ site.baseurl }}/images/grand2.jpg">
+            <img src="{{ site.baseurl }}/images/grand1.jpg">
+            <img src="{{ site.baseurl }}/images/grand3.jpg">
+        </div>
     </div>
 </section>
 
+<section class="faith">
+    <h3>WE HAVE FAITH IN OUR STUDENT FUTURE </h3>
+    <p class="faith-description">Our students are talented, hard-working. We encourage and empower them to push themselves to their maximum. Hands-on opportunities are what we're all about.</p>
+    <section class="brags">
+        <article>
+            <i class="fas fa-dumbbell"></i>
+            <h5>Empower</h5>
+            <p>We maintain a teambuilding environment where all are for one! Coachify is a name! Being a student is an honor!</p>
+        </article>
+        <article>
+            <i class="fas fa-globe-americas"></i>
+            <h5>Engage</h5>
+            <p> We turn our athletes into proffesionals prepared for the modern sporting world and beyond</p>
+        </article>
+        <article>
+            <i class="fas fa-graduation-cap"></i>
+            <h5>Graduation</h5>
+            <p>Students walk out from coachify as Training coaches, officials and classifiers to exacting standards.</p>
+        </article>
+        <article>
+            <i class="fas fa-trophy"></i>
+            <h5>Awarding</h5>
+            <p>Coachify gives you а globally acknowledged certificate.We serve Equipped managers with knowledge for the modern sporting world!</p>
+        </article>
+    </section>
+</section>
+<section class="more">
+    <div class="learn-more">
+        <i class="fas fa-medal"></i>
+        <div class="claims">
+            <h3>OUR STUDENTS ARE TALENTED,</h3>
+            <p>passionate, hard-working and born winners</p>
+        </div>
 
-<div>sdasdasdsaddas</div>
-<div>sdasdasdsaddas</div>
-<div>sdasdasdsaddas</div>
-<div>sdasdasdsaddas</div>
-<div>sdasdasdsaddas</div>
-<div>sdasdasdsaddas</div>
-<div>sdasdasdsaddas</div>
-<div>sdasdasdsaddas</div>
-<div>sdasdasdsaddas</div>
+        <a href="#" class="button-claim">Learn more</a>
+    </div>
+</section>
+
+<section class="news">
+
+    <h3>Our latest news</h3>
+
+    <ul class="listing posts">
+        {% for post in site.posts %}
+        <li>
+            <a href="{{ site.baseurl }}{{ post.url}}">
+                <span class="title">{{ post.title }}</span>
+                <span class="date">{{ post.date | date_to_string }}</span>
+            </a>
+        </li>
+        {% endfor %}
+    </ul>
+    
+
+</section>

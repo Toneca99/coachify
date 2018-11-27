@@ -1,0 +1,172 @@
+.faith {
+    text-align: center;
+
+    h3 {
+        margin: 2.5em 0 1em 0;
+        color: rgb(75, 75, 75);
+    }
+
+    .faith-description {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    p {
+        color: rgb(134, 134, 134);
+    }
+}
+
+.brags {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 8rem 4rem 8rem;
+
+    @include mq(tablet, max) {
+        flex-wrap: wrap;
+    }
+
+
+    h5 {
+        margin: 0;
+        padding: 1rem 0;
+    }
+
+    i {
+        font-size: 5rem;
+        color: rgb(15, 78, 163);
+    }
+
+    article {
+        margin: 0 1.5rem;
+    }
+}
+
+.more {
+    background: linear-gradient(rgba(34, 90, 167, 0.9), rgba(34, 90, 167, 0.9)), url("../images/learn.jpg");
+    background-size: cover;
+    background-position: 0 45%;
+    padding-top: 1rem;
+    z-index: 1;
+    color: #FFF;
+    margin: 0 15rem;
+
+    @include mq(tablet, max) {
+        margin: 0;
+
+        i {
+            display: none;
+        }
+    }
+
+
+    i {
+        font-size: 5rem;
+        padding: 0.5rem;
+    }
+
+    .learn-more {
+        display: flex;
+        align-items: center;
+        padding: 1rem 2rem;
+        justify-content: flex-start;
+        overflow: hidden;
+
+        @include mq(tablet, max) {
+            justify-content: center;
+            text-align: center;
+            flex-wrap: wrap;
+        }
+    }
+}
+
+.claims {
+    justify-self: flex-start;
+    padding: 2.5rem 5rem 1rem 0rem;
+
+    @include mq(tablet, max) {
+        padding: 0;
+    }
+
+
+    h3 {
+        @extend %reset;
+
+        font-weight: 500;
+    }
+
+    p {
+        letter-spacing: 4px;
+        font-size: 1.2em;
+    }
+
+    .button {
+        background: rgb(245, 171, 53);
+        border: 1px solid rgb(225, 151, 33);
+        border-radius: 0.3rem;
+    }
+}
+
+// RESPONSIVE 
+// RESPONSIVE 
+// RESPONSIVE 
+// RESPONSIVE 
+// RESPONSIVE
+
+@media screen and (min-width: 767px) {
+    .more .learn-more {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .more {
+        margin: 0 8rem;
+    }
+        i {
+            padding: 0.5rem;
+        }
+    
+
+    .claims {
+        padding: 0.5rem 0rem 1rem 0;
+        text-align: center;
+
+        p {
+            letter-spacing: 5px;
+        }
+    }
+}
+
+@media screen and (min-width: 850px) {
+
+    .claims {
+        padding: 2.5rem 2.5rem 1rem 1rem;
+
+        i {
+            font-size: 0rem;
+        }
+
+        .more {
+            margin: 0 8rem;
+        }
+    }
+
+    @media screen and (min-width: 1000px) {
+        .more .learn-more {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+        .more {
+            margin: 0 10rem;
+        }
+        .claims {
+            padding: 2.5rem 2.5rem 1rem 1rem;
+            text-align: left;
+
+          
+        }
+    }
+}

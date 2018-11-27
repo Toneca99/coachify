@@ -79,13 +79,20 @@ layout: site
     </div>
 </section>
 
+<section class="news">
 
-<div>sdasdasdsaddas</div>
-<div>sdasdasdsaddas</div>
-<div>sdasdasdsaddas</div>
-<div>sdasdasdsaddas</div>
-<div>sdasdasdsaddas</div>
-<div>sdasdasdsaddas</div>
-<div>sdasdasdsaddas</div>
-<div>sdasdasdsaddas</div>
-<div>sdasdasdsaddas</div>
+    <h3>Our latest news</h3>
+
+    <ul class="listing posts">
+        {% for post in site.posts %}
+        <li>
+            <a href="{{ site.baseurl }}{{ post.url}}">
+                <span class="title">{{ post.title }}</span>
+                <span class="date">{{ post.date | date_to_string }}</span>
+            </a>
+        </li>
+        {% endfor %}
+    </ul>
+    
+
+</section>

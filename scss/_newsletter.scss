@@ -1,0 +1,72 @@
+.join {
+    background: linear-gradient(rgba(34, 90, 167, 0.9), rgba(34, 90, 167, 0.9)), url("../images/learn.jpg");
+    background-size: cover;
+    background-position: 0 45%;
+    padding-top: 1rem;
+    z-index: 1;
+    color: #FFF;
+    margin: 0 8.5rem;
+    display:flex;
+    align-items: center;
+    padding:3rem;
+    
+    @include mq (tablet , max) {
+
+        flex-direction: column;
+        margin:0;
+    }
+
+    h3, p{
+        padding:0; 
+        margin:0;
+    }
+
+    h3{
+        font-weight:700;
+        text-transform: none;
+        padding-bottom:0.5rem;
+    }
+
+    p{
+        font-size:1.2em;
+    }
+
+    form{
+        flex-grow:1;
+    }
+
+    .text {
+        flex-grow:1;
+    }
+
+   .form form {
+       display:flex;
+       flex-wrap:wrap;
+
+       @include mq (tablet , max) {
+
+    
+    }
+
+
+
+   }
+ 
+  
+}
+
+@media screen and (max-width:1200px) {
+
+    .join {
+        flex-direction: column;
+       
+    }
+    .text p,
+    .text h3 {
+        text-align: center;
+    }
+    .form form {
+        margin-top:1rem;
+    }
+
+}

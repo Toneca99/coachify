@@ -18,6 +18,7 @@
 
 .button-claim {
     background:rgb(245, 171, 53);
+    border:none;
     border-bottom:3px solid rgba(110, 110, 110, 0.7);
     border-radius:0.3rem;
     padding: 1.2rem 3.5rem;
@@ -26,6 +27,7 @@
     color: #FFF;
     font-weight: 400;
     font-size:1.4rem;
+    outline: none;
 
     &:hover {
         animation:pop 0.3s 1 ease-in forwards;
@@ -33,4 +35,27 @@
      
       
     }
+}
+
+.submit{
+
+    background:rgb(245, 171, 53);
+    border:none;
+    border-bottom:3px solid rgba(110, 110, 110, 0.7);
+    border-radius:0.3rem;
+    padding: 0.6rem 1.5rem;
+    outline: none;
+    background: none;
+    color: #FFF;
+    font-weight: 400;
+    font-size:1.4rem;
+
+
+    &:hover {
+        animation:pop 0.3s 1 ease-in forwards;
+        color:#fff;
+     
+      
+    }
+
 }

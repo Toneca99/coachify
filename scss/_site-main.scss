@@ -9,6 +9,10 @@
     .faith-description {
         width: 50%;
         margin: 0 auto;
+
+        @include mq (phablet ,max) {
+            width: 70%;
+        }
     }
 
     p {
@@ -25,6 +29,9 @@
         flex-wrap: wrap;
     }
 
+    @include mq (phone,max) {
+        padding:2rem 2rem 4rem 2rem;
+    }
 
     h5 {
         margin: 0;
@@ -97,6 +104,11 @@
     p {
         letter-spacing: 4px;
         font-size: 1.2em;
+
+        @include mq (phablet,max) {
+            letter-spacing: 0px;
+        }
+    
     }
 
     .button {
@@ -111,6 +123,8 @@
 .video {
     display: flex;
     padding: 2rem 10rem;
+
+    
 
     .left-side,
     .right-side {
@@ -165,6 +179,12 @@
         }
     }
 }
+@media screen and (max-width: 650px) { 
+    .video {
+        flex-wrap: wrap;
+        padding:2rem 2rem;
+    }
+}
 
 @media screen and (max-width: 550px) {
     .video {
@@ -194,8 +214,7 @@
     }
 }
 
-/* VIDEO SECTION RESPONSIVE CODE */
-
+/*   */
 
 @media screen and (min-width: 767px) {
     .more .learn-more {

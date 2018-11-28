@@ -1,6 +1,11 @@
 .news {
     padding: 0 5rem;
 
+    @include mq(phablet,max) {
+        
+        padding:0 1rem;
+    }
+
     h3 {
         margin:2.5em 1rem 1em 1rem;
         color: rgb(75, 75, 75);
@@ -15,6 +20,7 @@
 
         ul{
             margin:1rem;
+            padding-bottom:1.5rem
         }
     }
 
@@ -28,6 +34,7 @@
         padding: 0;
         padding-bottom:1.5rem;
 
+       
         li {
             list-style: none outside;
         }
@@ -103,5 +110,11 @@
 
     .news .listing:nth-child(4) {
         display:none;
+    }
+}
+
+@media screen and (max-width:560px) {
+    .news .listing {
+        width:70vw;
     }
 }

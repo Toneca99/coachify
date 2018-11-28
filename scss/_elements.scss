@@ -123,10 +123,17 @@
     margin-top:2rem;
     flex-wrap:wrap;
     padding: 0 15rem 2rem 15rem;
-
+    @include mq (tablet-wide ,max) {
+        display:block;
+        padding: 0 10rem 2rem 10rem;
+    }
     @include mq (tablet ,max) {
         display:block;
         padding: 0 5rem 2rem 5rem;
+    }
+
+    @include mq (phone ,max ) {
+        padding:2rem;
     }
 
     .left-side,

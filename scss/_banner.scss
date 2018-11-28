@@ -117,6 +117,56 @@
     
 }
 
+
+/* ABOUT PAGE */
+
+.banner-about {
+    z-index: 1;
+    background-image: linear-gradient(rgba(34, 90, 167, 0.9), rgba(34, 90, 167, 0.9)), url("../images/banner2.jpg");
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 20rem;
+    background-position:70%;
+
+   .welcoming-about {
+       display:flex;
+       justify-content: center;
+       align-items: center;
+
+       .intro-about {
+           justify-content: center;
+           align-items: center;
+           position:relative;
+           top:-7rem;
+
+           h3 {
+               color:#FFF;
+               text-transform:none;
+               margin:0;
+               padding-bottom:1rem;
+
+               @include mq( tablet,max) {
+                   font-size:1.4em;
+                   text-align: center;
+               }
+               
+           }
+
+           p {
+               text-align: center;
+               color:rgb(212, 212, 212);
+               font-size:1.3em;
+
+               @include mq( tablet,max) {
+                font-size:1.1em;
+            }
+           }
+       }
+   }
+}
+/* */
+
 /* RESPONSIVE */
 //     R   *RESPONSIVE*
 //     E   *RESPONSIVE*

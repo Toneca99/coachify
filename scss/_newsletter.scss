@@ -1,3 +1,106 @@
+
+/* VIDEO  SECTION */
+
+.video {
+    display: flex;
+    padding: 2rem 10rem;
+
+    
+
+    .left-side,
+    .right-side {
+        padding: 2rem;
+        flex-basis: 50%;
+        justify-content: center;
+    }
+
+    .left-side {
+        p {
+            padding-bottom: 2.5em;
+            color: gray;
+            flex-basis: 25%;
+        }
+
+        .right-side {
+            margin: 1 0 auto;
+        }
+    }
+}
+
+// RESPONSIVE 
+// RESPONSIVE 
+// RESPONSIVE 
+// RESPONSIVE 
+// RESPONSIVE
+
+
+/* VIDEO SECTION RESPONSIVE CODE */
+@media screen and (max-width: 1200px) {
+  .video {
+      flex-direction: column;
+      
+  }
+}
+
+@media screen and (max-width: 1000px) {
+    .video {
+        flex-wrap: wrap;
+        padding:2rem 10rem;
+
+        .left-side {
+            padding: 2rem;
+            flex-basis: 100%;
+            h3{
+                text-align: center;
+            }
+        }
+
+        .right-side {
+            flex-basis: 100%;
+        }
+    }
+}
+@media screen and (max-width: 650px) { 
+    .video {
+        flex-wrap: wrap;
+        padding:2rem 2rem;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .video {
+        flex-wrap: wrap;
+        padding:2rem 5rem;
+
+        .left-side{
+            padding:2rem 0;
+        }
+
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .video {
+        flex-wrap: wrap;
+        padding:2rem 0rem;
+
+        .left-side{
+            padding:2rem 2rem;
+        }
+
+        .right-side{
+            padding:0;
+        }
+
+    }
+}
+
+/*   */
+
+
+
+
+
 .join {
     background: linear-gradient(rgba(34, 90, 167, 0.9), rgba(34, 90, 167, 0.9)), url("../images/learn.jpg");
     background-size: cover;

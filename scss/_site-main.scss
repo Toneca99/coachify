@@ -10,7 +10,7 @@
         width: 50%;
         margin: 0 auto;
 
-        @include mq (phablet ,max) {
+        @include mq(phablet, max) {
             width: 70%;
         }
     }
@@ -29,9 +29,11 @@
         flex-wrap: wrap;
     }
 
-    @include mq (phone,max) {
-        padding:2rem 2rem 4rem 2rem;
+
+    @include mq(phone, max) {
+        padding: 2rem 2rem 4rem 2rem;
     }
+
 
     h5 {
         margin: 0;
@@ -105,10 +107,9 @@
         letter-spacing: 4px;
         font-size: 1.2em;
 
-        @include mq (phablet,max) {
+        @include mq(phablet, max) {
             letter-spacing: 0px;
         }
-    
     }
 
     .button {
@@ -117,104 +118,6 @@
         border-radius: 0.3rem;
     }
 }
-
-/* VIDEO  SECTION */
-
-.video {
-    display: flex;
-    padding: 2rem 10rem;
-
-    
-
-    .left-side,
-    .right-side {
-        padding: 2rem;
-        flex-basis: 50%;
-        justify-content: center;
-    }
-
-    .left-side {
-        p {
-            padding-bottom: 2.5em;
-            color: gray;
-            flex-basis: 25%;
-        }
-
-        .right-side {
-            margin: 1 0 auto;
-        }
-    }
-}
-
-// RESPONSIVE 
-// RESPONSIVE 
-// RESPONSIVE 
-// RESPONSIVE 
-// RESPONSIVE
-
-
-/* VIDEO SECTION RESPONSIVE CODE */
-@media screen and (max-width: 1200px) {
-  .video {
-      flex-direction: column;
-      
-  }
-}
-
-@media screen and (max-width: 1000px) {
-    .video {
-        flex-wrap: wrap;
-        padding:2rem 10rem;
-
-        .left-side {
-            padding: 2rem;
-            flex-basis: 100%;
-            h3{
-                text-align: center;
-            }
-        }
-
-        .right-side {
-            flex-basis: 100%;
-        }
-    }
-}
-@media screen and (max-width: 650px) { 
-    .video {
-        flex-wrap: wrap;
-        padding:2rem 2rem;
-    }
-}
-
-@media screen and (max-width: 550px) {
-    .video {
-        flex-wrap: wrap;
-        padding:2rem 5rem;
-
-        .left-side{
-            padding:2rem 0;
-        }
-
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .video {
-        flex-wrap: wrap;
-        padding:2rem 0rem;
-
-        .left-side{
-            padding:2rem 2rem;
-        }
-
-        .right-side{
-            padding:0;
-        }
-
-    }
-}
-
-/*   */
 
 @media screen and (min-width: 767px) {
     .more .learn-more {
@@ -273,3 +176,218 @@
         text-align: left;
     }
 }
+
+/* ABOUT PAGE */
+
+.information {
+    background: #fff;
+    display: flex;
+    margin: 0 15rem;
+    padding: 3rem;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: -5.5rem;
+    z-index: 500;
+    box-shadow: 0px 7px 15px -7px rgba(0, 0, 0, 0.75);
+
+    div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        p {
+            margin: 0;
+            padding: 0;
+        }
+
+        .number {
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+
+        .info {
+            font-size: 1.2rem;
+            font-weight: 400;
+        }
+    }
+}
+
+@media screen and (max-width: 1220px) {
+    .information {
+        margin: 0 10rem;
+    }
+}
+
+@media screen and (max-width: 1110px) {
+    .information {
+        margin: 0 7rem;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .information {
+        margin: 0 5rem;
+    }
+}
+
+@media screen and (max-width: 930px) {
+    .information {
+        margin: 0 3rem;
+        padding:3rem 0;
+    }
+}
+
+
+@media screen and (max-width: 815px) {
+    .information {
+       flex-direction: column;
+        margin:0;
+       div {
+           padding:1.5rem 0;
+       }
+    }
+}
+
+@media screen and (max-width: 972px) {
+    #nav-main-toggle:checked + .site-header + .banner-about {
+        padding-top: 45rem;
+        transition: padding 0.5s ease;
+    }
+}
+
+@media screen and (min-width: 300px) {
+    #nav-main-toggle:checked + .site-header + .banner-about + .information{
+            margin:0;
+            top: -5rem;
+            transition: top 1.5s ease-in;
+        
+    }
+}
+
+@media screen and (min-width: 440px) {
+    #nav-main-toggle:checked + .site-header + .banner-about + .information{
+            margin:0;
+            top: -4rem;
+            transition: top 1.5s ease-in;
+        
+    }
+}
+
+
+/* ABOUT-US SECTION */
+
+.about-us {
+    position:relative;
+    z-index:5;
+    padding:0 8rem 2rem 8rem;
+    box-shadow: 0px 23px 82px 37px rgba(255,255,255,1);
+  
+
+    h3 {
+        text-align: center;
+        padding-bottom:1em;
+        margin:0;
+        padding:1em;
+    }
+    .faith-description {
+        color:rgb(121, 121, 121);
+        padding:0 7rem 2.5rem 7rem;
+    }
+
+    i {
+        color:rgb(246, 178, 69);
+        font-size:2.5rem;
+        width:1rem;
+        
+        margin-right:4rem;
+    }
+
+    .about-brags{
+        display:flex;
+        justify-content: space-evenly;
+        
+       
+        h5{
+            margin:0;
+            padding:0;
+            padding-bottom:0.5em;
+            font-weight:400;
+            text-transform:none;
+            font-size:1.2em;
+        }
+
+        article {
+            
+            flex-basis:40%;
+            justify-content: center;
+           
+            
+           
+
+            p {
+                color:rgb(121, 121, 121);
+            }
+
+            .align{
+                display:flex;
+                flex-grow:1;
+                margin:1.5rem;
+                
+              
+        
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width:975px) {
+    .about-us {
+
+        padding:0 4rem;
+      
+        .faith-description {
+            color:rgb(121, 121, 121);
+            padding:0 0rem 2.5rem 0rem;
+        }
+
+        .about-brags  article {
+            
+            flex-basis:50%;
+        }
+    }
+}
+
+
+@media screen and (max-width:650px) {
+    .about-us {
+
+        .about-brags{
+        flex-direction: column;
+        }
+    }
+}
+
+/*  */
+
+
+/* ABOUT-PHOTO*/
+
+.about-photo{
+    background:url("../images/about-page.jpg");
+    background-size:cover;
+    padding-top:45rem;
+    background-position: 20%;
+    position:relative;
+    z-index:2;
+}
+
+
+
+
+
+
+/*  */
+
+/* */

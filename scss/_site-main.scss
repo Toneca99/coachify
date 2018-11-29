@@ -439,19 +439,23 @@
         text-align: center;
     }
 
+    .swimming-student, .tennis-student {
+        display: none;
+    }
+
 }
 
-#basketball:checked + .about-photo + .testimonials{
+// #basketball:checked + .about-photo + .testimonials{
     
-        .basketball-student {
-            display: block;
-        }
+//         .basketball-student {
+//             display: block;
+//         }
 
-        .swimming-student, .tennis-student {
-            display: none;
-        }
+//         .swimming-student, .tennis-student {
+//             display: none;
+//         }
     
-}
+// }
 
 /* */
 

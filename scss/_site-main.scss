@@ -234,18 +234,18 @@
 @media screen and (max-width: 930px) {
     .information {
         margin: 0 3rem;
-        padding:3rem 0;
+        padding: 3rem 0;
     }
 }
 
-
 @media screen and (max-width: 815px) {
     .information {
-       flex-direction: column;
-        margin:0;
-       div {
-           padding:1.5rem 0;
-       }
+        flex-direction: column;
+        margin: 0;
+
+        div {
+            padding: 1.5rem 0;
+        }
     }
 }
 
@@ -257,137 +257,202 @@
 }
 
 @media screen and (min-width: 300px) {
-    #nav-main-toggle:checked + .site-header + .banner-about + .information{
-            margin:0;
-            top: -5rem;
-            transition: top 1.5s ease-in;
-        
+    #nav-main-toggle:checked + .site-header + .banner-about + .information {
+        margin: 0;
+        top: -5rem;
+        transition: top 1.5s ease-in;
     }
 }
 
 @media screen and (min-width: 440px) {
-    #nav-main-toggle:checked + .site-header + .banner-about + .information{
-            margin:0;
-            top: -4rem;
-            transition: top 1.5s ease-in;
-        
+    #nav-main-toggle:checked + .site-header + .banner-about + .information {
+        margin: 0;
+        top: -4rem;
+        transition: top 1.5s ease-in;
     }
 }
-
 
 /* ABOUT-US SECTION */
 
 .about-us {
-    position:relative;
-    z-index:5;
-    padding:0 8rem 2rem 8rem;
-    box-shadow: 0px 23px 82px 37px rgba(255,255,255,1);
-  
+    position: relative;
+    z-index: 5;
+    padding: 0 8rem 2rem 8rem;
+    box-shadow: 0px 23px 82px 37px rgba(255, 255, 255, 1);
 
     h3 {
         text-align: center;
-        padding-bottom:1em;
-        margin:0;
-        padding:1em;
+        padding-bottom: 1em;
+        margin: 0;
+        padding: 1em;
     }
+
     .faith-description {
-        color:rgb(121, 121, 121);
-        padding:0 7rem 2.5rem 7rem;
+        color: rgb(121, 121, 121);
+        padding: 0 7rem 2.5rem 7rem;
     }
 
     i {
-        color:rgb(246, 178, 69);
-        font-size:2.5rem;
-        width:1rem;
-        
-        margin-right:4rem;
+        color: rgb(246, 178, 69);
+        font-size: 2.5rem;
+        width: 1rem;
+        margin-right: 4rem;
     }
 
-    .about-brags{
-        display:flex;
+    .about-brags {
+        display: flex;
         justify-content: space-evenly;
-        
-       
-        h5{
-            margin:0;
-            padding:0;
-            padding-bottom:0.5em;
-            font-weight:400;
-            text-transform:none;
-            font-size:1.2em;
+
+        h5 {
+            margin: 0;
+            padding: 0;
+            padding-bottom: 0.5em;
+            font-weight: 400;
+            text-transform: none;
+            font-size: 1.2em;
         }
 
         article {
-            
-            flex-basis:40%;
+            flex-basis: 40%;
             justify-content: center;
-           
-            
-           
 
             p {
-                color:rgb(121, 121, 121);
+                color: rgb(121, 121, 121);
             }
 
-            .align{
-                display:flex;
-                flex-grow:1;
-                margin:1.5rem;
-                
-              
-        
+            .align {
+                display: flex;
+                flex-grow: 1;
+                margin: 1.5rem;
             }
         }
     }
-
 }
 
-@media screen and (max-width:975px) {
+@media screen and (max-width: 975px) {
     .about-us {
+        padding: 0 4rem;
 
-        padding:0 4rem;
-      
         .faith-description {
-            color:rgb(121, 121, 121);
-            padding:0 0rem 2.5rem 0rem;
+            color: rgb(121, 121, 121);
+            padding: 0 0rem 2.5rem 0rem;
         }
 
-        .about-brags  article {
-            
-            flex-basis:50%;
+        .about-brags article {
+            flex-basis: 50%;
         }
     }
 }
 
-
-@media screen and (max-width:650px) {
+@media screen and (max-width: 650px) {
     .about-us {
-
-        .about-brags{
-        flex-direction: column;
+        .about-brags {
+            flex-direction: column;
         }
     }
 }
 
 /*  */
-
 
 /* ABOUT-PHOTO*/
 
-.about-photo{
-    background:url("../images/about-page.jpg");
-    background-size:cover;
-    padding-top:45rem;
+.about-photo {
+    background: url("../images/about-page.jpg");
+    background-size: cover;
+    padding-top: 45rem;
     background-position: 20%;
-    position:relative;
-    z-index:2;
+    position: relative;
+    z-index: 2;
 }
 
-
-
-
-
-
 /*  */
+
+/* ABOUT - TESTIMONIAL SECTION*/
+.testimonials {
+    padding: 0rem 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    p:first-of-type {
+        text-align: center;
+        color: rgb(121, 121, 121);
+
+        &:before {
+            display: block;
+            content: '“';
+            font-size: 10rem;
+            padding: 0;
+            margin: 0;
+            color: rgb(121, 121, 121);
+            height: 10rem;
+        }
+
+        &:after {
+            display: block;
+            margin: 2rem auto 1.5rem auto;
+            width: 5rem;
+            height: 0.15rem;
+            content: '';
+            background: rgb(121, 121, 121);
+        }
+    }
+
+    .student-name,
+    .student-sport {
+        margin: 0;
+        padding: 0;
+    }
+
+    .student-name {
+        font-size: 1.5rem;
+        font-weight: 700;
+        letter-spacing: 1px;
+        padding-bottom: 0.5rem;
+    }
+
+    .student-sport {
+        font-size: 1.2rem;
+        color: rgb(121, 121, 121);
+        padding-bottom: 3.5rem;
+    }
+
+    img {
+        width: 7rem;
+        height: 7rem;
+        border-radius: 50%;
+        margin: 0 2rem;
+
+        &:hover {
+            border: 3px solid #FFF;
+            border-radius: 50%;
+            box-shadow: 0 0 2rem 0 #000;
+        }
+    }
+
+    .students {
+        padding-bottom: 4rem;
+    }
+
+    .swimming, .basketball, .tennis {
+        text-align: center;
+    }
+
+}
+
+#basketball:checked + .about-photo + .testimonials{
+    
+        .basketball-student {
+            display: block;
+        }
+
+        .swimming-student, .tennis-student {
+            display: none;
+        }
+    
+}
+
+/* */
 
 /* */

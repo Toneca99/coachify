@@ -375,6 +375,10 @@
     align-items: center;
     justify-content: center;
 
+    @include mq(phablet ,max ) {
+        padding:0 4rem;
+    }
+
     p:first-of-type {
         text-align: center;
         color: rgb(121, 121, 121);
@@ -423,6 +427,13 @@
         height: 7rem;
         border-radius: 50%;
         margin: 0 2rem;
+        filter: opacity(50%);
+        
+        @include mq (phone ,max ) {
+           margin:1rem 0;
+            
+        }
+
 
         &:hover {
             border: 3px solid #FFF;
@@ -437,37 +448,57 @@
 
     .panel {
         display: none;
+        text-align: center;
+        transition:display 1s ease-in-out;
     }
 
-    input[type="radio"]:checked + .panel {
+    input[type="radio"]:checked + .panel{
         display: block;
+        
+       
     }
+    
+    input[type="radio"]:checked + .students{
+
+        img{
+            filter: opacity(100%);
+            box-shadow: 0 0 2rem 0 #000;
+        }
+
+    }
+
 
     .students {
         padding-bottom: 4rem;
+        display: flex;
+     
+        @include mq (phone ,max ) {
+            flex-direction: column;
+
+        }
+      
     }
 
-    .swimming, .basketball, .tennis {
-        text-align: center;
-    }
 
-    .swimming-student, .tennis-student {
-        display: none;
+    input#basketball:checked ~ .students label#basketball1 img{
+        filter: opacity(100%);
+        box-shadow: 0 0 2rem 0 #000;
+    }
+    input#swimming:checked ~ .students label#swimming1 img{
+        filter: opacity(100%);
+        box-shadow: 0 0 2rem 0 #000;
+    }
+    
+    input#tennis:checked ~ .students label#tennis1 img{
+        filter: opacity(100%);
+        box-shadow: 0 0 2rem 0 #000;
     }
 
 }
 
-// #basketball:checked + .about-photo + .testimonials{
-    
-//         .basketball-student {
-//             display: block;
-//         }
 
-//         .swimming-student, .tennis-student {
-//             display: none;
-//         }
-    
-// }
+
+
 
 /* */
 

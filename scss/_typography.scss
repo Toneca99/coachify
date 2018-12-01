@@ -77,6 +77,7 @@ table {
     border-collapse: collapse;
     table-layout: fixed;
     width:100%;
+    margin-bottom:1.5rem;
 }
 
 a {
@@ -93,6 +94,7 @@ table, th ,td {
 }
 tbody {
     vertical-align: baseline;
+   
 }
 th,td {
     padding:0.5em;
@@ -101,4 +103,12 @@ th,td {
 th {
     font-weight:700;
     color:#666;
+}
+
+figcaption {
+    background:rgb(224, 224, 224);
+    padding:1rem;
+    color:rgb(87, 87, 87);
+    margin-top:-1rem;
+    margin-bottom:1rem;
 }

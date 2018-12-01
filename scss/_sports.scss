@@ -1,0 +1,172 @@
+.banner-sports {
+    z-index: 1;
+    background-image: linear-gradient(rgba(34, 90, 167, 0.9), rgba(34, 90, 167, 0.9)), url("../images/banner3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 25rem;
+    background-position: 10% 55%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 0px 17px 21px -3px rgba(255,255,255,1);
+    
+    h2 {
+        color:#FFF;
+    }
+}
+
+.sports {
+ padding:0;
+ box-shadow: 0px -28px 64px 6px rgba(28, 79, 133, 0.5);
+}
+
+.sport-list {
+
+    overflow: hidden;
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        display:grid;
+        grid-template-columns: 2fr 2fr;
+        justify-content: center;
+        @include mq(tablet,max) {
+            grid-template-columns:1fr;
+        }
+    }
+
+    li {
+        
+        max-width: 100%;
+        height: auto;
+        padding-top: 25rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        h4 {
+            font-size: 5rem;
+            margin: 0;
+            padding: 0;
+            color: #FFF;
+
+            @extend %position;
+
+            @include mq(phablet, max) {
+                font-size: 3rem;
+            }
+
+            @include mq(tablet-wide,max) {
+                font-size:3.5rem;
+            }
+        }
+    }
+
+    li:nth-child(1) {
+        background: url("../images/sports/basketball.jpg");
+        background-size: cover;
+        background-position: 10% 10%;
+
+        @include mq(phablet, max) {
+            background-position: 60% 10%;
+        }
+
+
+        h4 {
+            background: linear-gradient(rgba(252, 92, 101, 0.8), rgba(252, 92, 101, 0.5));
+            padding-top: 15rem;
+            padding-left: 2rem;
+
+            &:hover {
+                background: linear-gradient(rgba(252, 92, 101, 0.5), rgba(252, 92, 101, 0.2));
+            }
+        }
+    }
+
+    li:nth-child(2) {
+        background: url("../images/sports/swimming.jpg");
+        background-size: cover;
+        background-position: 10% 10%;
+
+        h4 {
+            background: linear-gradient(rgba(34, 90, 167, 0.8), rgba(34, 90, 167, 0.5));
+            padding-top: 15rem;
+            padding-left: 2rem;
+
+            &:hover {
+                background: linear-gradient(rgba(34, 90, 167, 0.5), rgba(34, 90, 167, 0.2));
+            }
+        }
+    }
+
+    li:nth-child(3) {
+        background: url("../images/sports/tennis.jpg");
+        background-size: cover;
+        background-position: 10% 25%;
+
+        h4 {
+            background: linear-gradient(rgba(247, 183, 49, 0.8), rgba(247, 183, 49, 0.5));
+            padding-top: 15rem;
+            padding-left: 2rem;
+
+            &:hover {
+                background: linear-gradient(rgba(247, 183, 49, 0.5), rgba(247, 183, 49, 0.2));
+            }
+        }
+    }
+
+    li:nth-child(4) {
+        background: url("../images/sports/football.jpg");
+        background-size: cover;
+        background-position: 10% 10%;
+
+        h4 {
+            background: linear-gradient(rgba(34, 90, 167, 0.8), rgba(34, 90, 167, 0.5));
+            padding-top: 15rem;
+            padding-left: 2rem;
+
+            &:hover {
+                background: linear-gradient(rgba(34, 90, 167, 0.8), rgba(34, 90, 167, 0.2));
+            }
+        }
+    }
+
+    li:nth-child(5) {
+        background: url("../images/sports/ski.jpg");
+        background-size: cover;
+        background-position: 10% 10%;
+
+        h4 {
+            background: linear-gradient(rgba(127, 143, 166, 0.8), rgba(127, 143, 166, 0.5));
+            padding-top: 15rem;
+            padding-left: 2rem;
+
+            &:hover {
+                background: linear-gradient(rgba(127, 143, 166, 0.5), rgba(127, 143, 166, 0.2));
+            }
+        }
+    }
+
+    li:nth-child(6) {
+        background: url("../images/sports/wrestling.jpg");
+        background-size: cover;
+        background-position: 10% 10%;
+
+        h4 {
+            background: linear-gradient(rgba(127, 143, 166, 0.8), rgba(127, 143, 166, 0.5));
+            padding-top: 15rem;
+            padding-left: 2rem;
+
+            &:hover {
+                background: linear-gradient(rgba(127, 143, 166, 0.5), rgba(127, 143, 166, 0.2));
+            }
+        }
+    }
+}
+
+#nav-main-toggle:checked + .site-header + .sports {
+    transition: padding 0.5s ease;
+    padding-top: 31rem;
+}

@@ -1,0 +1,40 @@
+---
+layout: site
+title: Login
+permalink: /login/
+---
+
+
+
+<section class="login">
+
+   <form action="GET">
+       <fieldset>
+            <a href="{{ site.baseurl }}/" alt="Coachify">
+
+                <div class="site-branding">
+                    <div class="logo"><img src="{{ site.baseurl }}/images/oscar.png"></div>
+                    <div>
+                        <div class="site-title">Coachify</div>
+                        <div class="site-description">sport academy</div>
+                    </div>
+                </div>
+            </a>
+
+            <h4>Welcome to Coachify  Sport Academy</h4>
+        <div class="field">
+            <label for="username">Username</label>
+            <input type="text" name="username" id="username" placeholder="Username">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" placeholder="Enter your password">
+            <div class="buttons">
+                <input type="submit" class="submit" value="Login">
+                <a href="{{ site.baseurl }}/register/" class="submit">Register</a>
+            </div>
+        </div>
+       </fieldset>
+   </form>
+
+
+
+</section>

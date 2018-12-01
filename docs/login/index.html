@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="/css/style.css" type="text/css">
 </head>
 
-<body class="welcome-to-jekyll">
+<body class="login">
 
     <div class="site">
         <input type="checkbox" name="nav-main-toggle" id="nav-main-toggle">
@@ -31,7 +31,7 @@
 
                     <ul>
                         <li><a href="/about/">About</a></li>
-                        <li><a href="#">Academics</a></li>
+                        <li><a href="/sports/">Sports</a></li>
                         <li><a href="#">Events</a></li>
                         <li><a href="#">Timetable</a></li>
                         <li><a href="#">Gallery</a></li>
@@ -47,21 +47,38 @@
         </header>
 
 
-        <p>You’ll find this post in your <code class="highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
+        <section class="login">
 
-<p>To add new posts, simply add a file in the <code class="highlighter-rouge">_posts</code> directory that follows the convention <code class="highlighter-rouge">YYYY-MM-DD-name-of-post.ext</code> and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.</p>
+   <form action="GET">
+       <fieldset>
+            <a href="/" alt="Coachify">
 
-<p>Jekyll also offers powerful support for code snippets:</p>
+                <div class="site-branding">
+                    <div class="logo"><img src="/images/oscar.png"></div>
+                    <div>
+                        <div class="site-title">Coachify</div>
+                        <div class="site-description">sport academy</div>
+                    </div>
+                </div>
+            </a>
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
-  <span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
-<span class="k">end</span>
-<span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
-<span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
+            <h4>Welcome to Coachify  Sport Academy</h4>
+        <div class="field">
+            <label for="username">Username</label>
+            <input type="text" name="username" id="username" placeholder="Username">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" placeholder="Enter your password">
+            <div class="buttons">
+                <input type="submit" class="submit" value="Login">
+                <a href="/register/" class="submit">Register</a>
+            </div>
+        </div>
+       </fieldset>
+   </form>
 
-<p>Check out the <a href="https://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>
 
 
+</section>
 
 
         <footer class="site-footer">
@@ -79,13 +96,13 @@
                 <nav class="links">
                     <ul>
                         <li><a href="#">School</a></li>
-                        <li><a href="#">Login</a></li>
-                        <li><a href="#">Register</a></li>
+                        <li><a href="/login/">Login</a></li>
+                        <li><a href="/register/">Register</a></li>
                     </ul>
                     <ul>
                         <li><a href="#">About</a></li>
                         <li><a href="/teachers/">Teachers</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="/contact/">Contact</a></li>
                     </ul>
                     <ul>
                         <li><a href="#">Events</a></li>

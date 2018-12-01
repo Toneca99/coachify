@@ -136,7 +136,7 @@ fieldset {
     align-items: center;
     flex-direction: column;
     color:#FFF;
-    overflow: hidden;
+
 
     background-color: #2e6ca7;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23b8b8b8' fill-opacity='0.69' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
@@ -190,6 +190,10 @@ fieldset {
         display:flex;
         justify-content: space-between;
         text-align: left;
+
+        @include mq(phone-wide , max) {
+            display:block;
+        }
         label {
             display:block;
             margin:0.5rem;
@@ -198,7 +202,9 @@ fieldset {
 
         input{
             padding:1rem 1.5rem;
-           
+            @include mq(phone-wide , max) {
+                width:100%;
+            }
             justify-content: space-between;
           
         }

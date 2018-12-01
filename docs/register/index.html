@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="/css/style.css" type="text/css">
 </head>
 
-<body class="login">
+<body class="register">
 
     <div class="site">
         <input type="checkbox" name="nav-main-toggle" id="nav-main-toggle">
@@ -47,7 +47,7 @@
         </header>
 
 
-        <section class="login">
+        <section class="register">
 
    <form action="POST">
        <fieldset>
@@ -63,19 +63,27 @@
             </a>
 
             <h4>Welcome to Coachify  Sport Academy</h4>
-        <div class="field">
+        <div class="field-register">
+
+         
             <label for="username">Username</label>
             <input type="text" name="username" id="username" placeholder="Username">
-            <label for="password">Password</label>
-            <input type="password" name="password" id="password" placeholder="Enter your password">
-            <label for="remember" id="remember-check">
-                <input type="checkbox" name="remember" id="remember">
-                 Remember me
-             </label>
-            <div class="buttons">
-                <input type="submit" class="button" value="Login">
-                <a href="/register/" class="button">Register</a>
+
+            <div class="register-input">
+            <div class="enter">
+                <label for="password1">Password</label>
+                <input type="password" name="password1" id="password1" placeholder="Enter your password">
+                <label for="email">Email Addres</label>
+                <input type="email" name="email1" id="email1" placeholder="Enter your email">
             </div>
+            <div class="repeat">
+                <label for="password2">Repeat Password</label>
+                <input type="password" name="password2" id="password2" placeholder="Repeat your password">
+                <label for="email2">Repeat Email Addres</label>
+                <input type="email" name="email2" id="email2" placeholder="Repeat your email">
+            </div>
+        </div>
+                <input type="submit" class="button" value="Register">
         </div>
        </fieldset>
    </form>

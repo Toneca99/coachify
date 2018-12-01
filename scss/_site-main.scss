@@ -25,6 +25,14 @@
     justify-content: center;
     padding: 2rem 8rem 4rem 8rem;
 
+    div{
+        display:flex;
+       
+        @include mq(Screen3, max) {
+            flex-wrap: wrap;
+        }
+    }
+
     @include mq(tablet, max) {
         flex-wrap: wrap;
     }

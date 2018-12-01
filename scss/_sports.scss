@@ -13,6 +13,7 @@
     
     h2 {
         color:#FFF;
+        text-align: center;
     }
 }
 
@@ -169,4 +170,66 @@
 #nav-main-toggle:checked + .site-header + .sports {
     transition: padding 0.5s ease;
     padding-top: 31rem;
+}
+
+
+/*sports */
+.tennis-banner,
+.basketball-banner,
+.football-banner,
+.wrestling-banner , 
+.ski-banner,
+.swimming-banner {
+background-repeat: no-repeat;
+background-size: cover;
+padding-top: 30rem;
+position:relative;
+
+h2 {
+    color:#FFF;
+    position:absolute;
+    top:50%; left:50%;
+    transform: translate(-50%,-50%);
+}
+}
+
+/* TENNIS */
+
+.tennis-banner {
+    background-image: linear-gradient(rgba(34, 90, 167, 0.9), rgba(34, 90, 167, 0.9)), url('../images/sports/tennis-banner.jpg');
+  
+
+  
+}
+/* Basketball */
+
+.basketball-banner {
+    background-image: linear-gradient(rgba(34, 90, 167, 0.9), rgba(34, 90, 167, 0.9)), url('../images/sports/basketball-banner.jpg');
+    background-position: 10% 40%;
+   
+}
+/* Football */
+
+.football-banner {
+    background-image: linear-gradient(rgba(34, 90, 167, 0.9), rgba(34, 90, 167, 0.9)), url('../images/sports/football-banner.jpg');
+    background-position: 10% 40%;
+}
+
+/* Wrestling */
+
+.wrestling-banner {
+    background-image: linear-gradient(rgba(34, 90, 167, 0.9), rgba(34, 90, 167, 0.9)), url('../images/sports/wrestling-banner.jpg');
+
+}
+/* Ski */
+
+.ski-banner {
+    background-image: linear-gradient(rgba(34, 90, 167, 0.9), rgba(34, 90, 167, 0.9)), url('../images/sports/ski-banner.jpg');
+    background-position: 10% 40%;
+}
+/* Swimming */
+
+.swimming-banner {
+    background-image: linear-gradient(rgba(34, 90, 167, 0.9), rgba(34, 90, 167, 0.9)), url('../images/sports/swimming-banner.jpg');
+
 }
